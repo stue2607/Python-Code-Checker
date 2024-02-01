@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        p {
+            color: #666666;
+            font-size: 18px;
+        }
+
+        .error {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .code {
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+            background-color: #eeeeee;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p>This python code checker was made by Stuart Elliott</p>
+        <div class="code">{{ result }}</div>
+        <p>Thank-you for using Python Code Checker</p>
+        <p>Please press any key to return home</p>
+    </div>
+    <script>
+        // Wait for the user to press any key
+        document.addEventListener("keydown", function(event) {
+            // Redirect to the home page
+            window.location.href = "/";
+        });
+    </script>
+</body>
+</html>

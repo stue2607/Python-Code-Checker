@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python Code Checker Online</title>
+  <!-- Add a <style> element to define CSS rules -->
+  <style>
+    /* Use a custom font from Google Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+    /* Set the background color of the body */
+    body {
+      background-color: #f0f0f0;
+    }
+
+    /* Set the font family, size, and color of the heading */
+    h1 {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 36px;
+      color: #333333;
+    }
+
+    /* Set the font family, size, and color of the paragraph */
+    p {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 18px;
+      color: #666666;
+    }
+
+    /* Set the width, border, padding, and margin of the form */
+    form {
+      width: 600px;
+      border: 1px solid #cccccc;
+      padding: 20px;
+      margin: 20px auto;
+    }
+
+    /* Set the width, height, and font of the textarea */
+    textarea {
+      width: 550px;
+      height: 200px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+    }
+
+    /* Set the width, height, background color, and font of the submit button */
+    input[type=submit] {
+      width: 100px;
+      height: 40px;
+      background-color: #333333;
+      color: white;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Python Code Checker Online</h1>
+  <p>Enter some Python code and see if it is valid or not.</p>
+  <form action="/result" method="POST">
+    <textarea name="code" rows="10" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Check Code">
+  </form>
+</body>
+</html>
+
